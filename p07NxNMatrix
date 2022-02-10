@@ -1,0 +1,22 @@
+package L4Methods.exe;
+
+import java.util.Scanner;
+
+public class p07NxNMatrix {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int value = Integer.parseInt(scanner.nextLine());
+
+        matrix(value);
+
+    }
+    private static void matrix(int value) {
+        for (int row = 0; row < value; row++) {
+            for (int col = 0; col < value; col++) {
+                System.out.print(value + " ");
+            }
+            System.out.println();
+        }
+    }
+}
