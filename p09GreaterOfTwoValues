@@ -1,0 +1,44 @@
+package L4Methods.lab;
+
+import java.util.Scanner;
+
+public class p09GreaterOfTwoValues {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String form = scanner.nextLine();
+
+        if (form.equals("int")){
+            int num1 = Integer.parseInt(scanner.nextLine());
+            int num2 = Integer.parseInt(scanner.nextLine());
+            integer(num1, num2);
+        }else if (form.equals("char")){
+            char first = scanner.nextLine().charAt(0);
+            char second = scanner.nextLine().charAt(0);
+            System.out.println(max(first, second));
+        }else {
+            String first = scanner.nextLine();
+            String second = scanner.nextLine();
+            string(first, second);
+        }
+    }
+
+    public static void integer(int num1, int num2) {
+        System.out.println(Math.max(num1, num2));
+    }
+    public static char max(char first, char second) {
+        if (first > second) {
+            return first;
+        } else {
+            return second;
+        }
+    }
+    public static  void string(String first, String second){
+        if (first.compareTo(second) > 0){
+            System.out.println(first);
+        }else {
+            System.out.println(second);
+        }
+    }
+
+}
