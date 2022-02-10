@@ -1,0 +1,20 @@
+package L4Methods.lab;
+
+import java.util.Scanner;
+
+public class p07RepeatString {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String letters = scanner.nextLine();
+        int num = Integer.parseInt(scanner.nextLine());
+
+        strings(letters, num);
+    }
+    public static void strings (String letters, int num){
+
+        for (int i = 0; i < num; i++){
+            System.out.print(letters);
+        }
+    }
+}
