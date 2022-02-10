@@ -1,0 +1,19 @@
+package L4Methods.lab;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class p08MathPower {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double num = Double.parseDouble(scanner.nextLine());
+        int numMultiply = Integer.parseInt(scanner.nextLine());
+
+        sum(num, numMultiply);
+
+    }
+    public static  void sum(double num, int numMultiply){
+        System.out.println(new DecimalFormat("0.####").format(Math.pow(num, numMultiply)));
+    }
+}
