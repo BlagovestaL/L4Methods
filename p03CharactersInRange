@@ -1,0 +1,27 @@
+package L4Methods.exe;
+
+import java.util.Scanner;
+
+public class p03CharactersInRange {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        char element1 = scanner.nextLine().charAt(0);
+        char element2 = scanner.nextLine().charAt(0);
+
+        elements(element1, element2);
+
+    }
+    public static void elements(char element1, char element2) {
+
+        if (element1 < element2) {
+            for (char element = (char) (element1 + 1); element < element2; element++) {
+                System.out.print(element + " ");
+            }
+        } else {
+            for (char element = (char) (element2 + 1); element < element1; element++) {
+                System.out.print(element + " ");
+            }
+        }
+    }
+}
