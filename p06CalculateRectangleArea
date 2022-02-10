@@ -1,0 +1,18 @@
+package L4Methods.lab;
+
+import java.util.Scanner;
+
+public class p06CalculateRectangleArea {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int width = Integer.parseInt(scanner.nextLine());
+        int length = Integer.parseInt(scanner.nextLine());
+
+        sum(width,length);
+    }
+
+    public static void sum(int width, int length) {
+        System.out.println(width * length);
+    }
+}
