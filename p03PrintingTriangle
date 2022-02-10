@@ -1,0 +1,26 @@
+package L4Methods.lab;
+
+import java.util.Scanner;
+
+public class p03PrintingTriangle {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int num = Integer.parseInt(scanner.nextLine());
+
+        for (int i = 1 ; i <= num; i++){
+            Numbers(1, i);
+        }
+        for (int j = num - 1; j >= 1; j--){
+            Numbers(1, j);
+        }
+    }
+    public static void Numbers (int start, int end){
+
+        for (int i = start; i <= end; i++){
+            System.out.print(i + " ");
+        }
+
+        System.out.println();
+    }
+}
