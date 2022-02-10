@@ -1,0 +1,35 @@
+package L4Methods.exe;
+
+import java.util.Scanner;
+
+public class p02VowelsCount {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String input = scanner.nextLine();
+
+       yes(input);
+    }
+    public static void yes(String word) {
+        String[] input = word.split("");
+
+        int count = 0;
+        for (int i = 0; i < word.length(); i++) {
+            if (input[i].equals("a") || input[i].equals("A")) {
+                count++;
+            } else if (input[i].equals("o") || input[i].equals("O")) {
+                count++;
+            } else if (input[i].equals("e") || input[i].equals("E")) {
+                count++;
+            } else if (input[i].equals("u") || input[i].equals("U")) {
+                count++;
+            } else if (input[i].equals("i") || input[i].equals("I")) {
+                count++;
+            } else if (input[i].equals("y") || input[i].equals("Y")) {
+                count++;
+            }
+        }
+        System.out.println(count);
+
+    }
+}
